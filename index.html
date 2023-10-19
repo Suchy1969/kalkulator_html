@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Jakub Suchański</title>
+</head>
+<body>
+<div class="container">
+<div class="kalkulator">
+
+    <form>
+        <div class="display">
+            <input type="text" name="wyswietlanie">
+        </div>
+        <div class="btn-box"> 
+            <input type="button"  value="AC" onclick="wyswietlanie.value = ''">
+            <input type="button" value="DE" onclick="wyswietlanie.value = wyswietlanie.value.toString().slice(0,-1)">
+            <input type="button" value="." onclick="wyswietlanie.value += '.'">
+            <input type="button" value="/" onclick="wyswietlanie.value += '/'">
+
+        </div>
+        <div class="btn-box">
+            <input type="button" value="7" onclick="wyswietlanie.value += '7'">
+            <input type="button" value="8" onclick="wyswietlanie.value += '8'">
+            <input type="button" value="9" onclick="wyswietlanie.value += '9'">
+            <input type="button" value="*" onclick="wyswietlanie.value += '*'">
+            
+        </div>
+        <div class="btn-box">
+            <input type="button" value="4" onclick="wyswietlanie.value += '4'">
+            <input type="button" value="5" onclick="wyswietlanie.value += '5'">
+            <input type="button" value="6" onclick="wyswietlanie.value += '6'">
+            <input type="button" value="+" onclick="wyswietlanie.value += '+'">
+            
+
+        </div>
+        <div class="btn-box">
+            <input type="button" value="1" onclick="wyswietlanie.value += '1'">
+            <input type="button" value="2" onclick="wyswietlanie.value += '2'">
+            <input type="button" value="3" onclick="wyswietlanie.value += '3'">
+            <input type="button" value="-" onclick="wyswietlanie.value += '-'">
+
+        </div>
+        <div class="btn-box">
+            <input type="button" value="00" onclick="wyswietlanie.value += '00'">
+            <input type="button" value="0" onclick="wyswietlanie.value += '0'">
+            <input type="button" value="=" onclick="wyswietlanie.value = eval(wyswietlanie.value)" class="eq" >
+
+        </div>
+    </form>
+</div>
+
+
+</div>
+
+    
+</body>
+</html>
